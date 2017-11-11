@@ -1,0 +1,6 @@
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\bin\Debug\InFocusAnalyticsLib.dll
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\bin\Debug\InFocusAnalyticsLib.pdb
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\bin\Debug\log4net.dll
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\bin\Debug\log4net.pdb
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\obj\Debug\InFocusAnalyticsLib.dll
+D:\mondopad2\InFocusAnalyticsLib\InFocusAnalyticsLib\obj\Debug\InFocusAnalyticsLib.pdb
