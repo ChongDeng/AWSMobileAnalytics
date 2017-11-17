@@ -281,15 +281,21 @@ namespace InFocusAnalyticsEventProcessor
 
                 customEvent.AddAttribute("EventTime", EventBean.EventTime);
 
-                foreach (KeyValuePair<string, string> attribute in EventBean.AttributeMap)
+                if (EventBean.AttributeMap != null)
                 {
-                    customEvent.AddAttribute(attribute.Key, attribute.Value);
+                    foreach (KeyValuePair<string, string> attribute in EventBean.AttributeMap)
+                    {
+                        customEvent.AddAttribute(attribute.Key, attribute.Value);
+                    }
                 }
 
-                foreach (KeyValuePair<string, Double> attribute in EventBean.MetricMap)
+                if (EventBean.MetricMap != null)
                 {
-                    customEvent.AddMetric(attribute.Key, attribute.Value);
-                }
+                    foreach (KeyValuePair<string, Double> attribute in EventBean.MetricMap)
+                    {
+                        customEvent.AddMetric(attribute.Key, attribute.Value);
+                    }
+                }                
 
                 //step4: record event which will be automatically submitted later.
                 _manager.RecordEvent(customEvent);
